@@ -3,7 +3,7 @@ use smooth_bevy_cameras::{LookTransform, LookTransformBundle, LookTransformPlugi
 
 fn main() {
     App::new()
-        .insert_resource(Msaa { samples: 4 })
+        .insert_resource(Msaa::default())
         .add_plugins(DefaultPlugins)
         .add_plugin(LookTransformPlugin)
         .add_startup_system(setup)
